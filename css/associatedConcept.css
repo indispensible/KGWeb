@@ -1,0 +1,16 @@
+#main div {
+	border-radius: 15px!important;
+}
+
+.el-pagination {
+    text-align: center!important;
+    background-color: #ffffff!important;
+    padding: 16px 0px;
+    width: 81%;
+    margin: 0px auto;
+    border-radius: 15px;
+  }
+
+/*canvas {
+	width: 100%!important;
+}*/

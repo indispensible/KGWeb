@@ -1,0 +1,35 @@
+#loading {
+    margin: 50px auto 30px;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    box-shadow: 0 -12px 0 3px #000,
+                0 12px 1px 1px #333,
+                -12px 0 2px 1px #333,
+                12px 0 0 1px #333,
+                -9px -9px 3px 1px #333,
+                9px -9px 0 2px #333,
+                -9px 9px 1px 1px #333,
+                9px 9px 0 1px #333;  
+    -webkit-animation: gif-loading 2s linear 0s infinite;
+    -moz-animation: gif-loading 2s linear 0s infinite;
+    -o-animation: gif-loading 2s linear 0s infinite;
+    animation: gif-loading 2s linear 0s infinite;
+}
+
+@-moz-keyframes gif-loading {
+    from{transform: rotate(360deg);}
+    to{transform: rotate(0deg);}
+}
+@-o-keyframes gif-loading {
+    from{transform: rotate(360deg);}
+    to{transform: rotate(0deg);}
+}
+@-webkit-keyframes gif-loading {
+    from{transform: rotate(360deg);}
+    to{transform: rotate(0deg);}
+}
+@keyframes gif-loading{
+    from{transform: rotate(360deg);}
+    to{transform: rotate(0deg);}
+}

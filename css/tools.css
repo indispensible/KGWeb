@@ -1,0 +1,13 @@
+.el-select{
+	margin-right: 5px;
+}
+
+.el-input__inner{
+	height: 48px;
+	text-align: center;
+}
+
+.el-input__suffix{
+	height: 47px;
+	margin-top: 1px;
+}

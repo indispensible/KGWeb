@@ -1,0 +1,72 @@
+jmnode {
+    color: #2b2727!important;
+    cursor: pointer;
+}
+
+jmnode:hover{
+    background-color:#68bdf6!important;
+    /* white-space: normal; */
+}
+
+.layui-layer-loading2 {
+    height: 50px!important;
+    margin-top: 45em!important;
+}
+
+/* #layui-layer1 {
+    height: 100em!important;
+} */
+
+.el-button {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid #dcdfe6;
+        border-top-color: rgb(220, 223, 230);
+        border-right-color: rgb(220, 223, 230);
+        border-bottom-color: rgb(220, 223, 230);
+        border-left-color: rgb(220, 223, 230);
+    color: #409eff;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    transition: .1s;
+    font-weight: 500;
+    /* padding: 12px 12px; */
+    padding: 12px!important;
+    font-size: 14px;
+    border-radius: 4px;
+    background: #ecf5ff;
+    border-color: #b3d8ff;
+}
+
+.el-button:hover {
+    background: #409eff;
+    border-color: #409eff;
+    color: #fff;
+}
+
+.el-button>span{
+	margin-left: 0px!important;
+}
+
+/* .layui-layer-tips{
+    width: 420px!important;
+} */
+
+.layui-layer-content{
+    border-radius: 5px!important;
+}
+
+body{
+    margin: 0px!important;
+}
+
+hr{
+    border: none;
+	height: 1px;
+	background-color: #e5e5e5;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <script src="./js/common/echarts.js"></script>
+</head>
+<body>
+    <div id="main" style="width: 1300px;height:600px;margin: 70px auto 0px;"></div>
+    <script type="text/javascript">
+        let data_dict = {'浦东': 586, '杨浦': 3189, '虹口': 2836, '长宁': 3005, '宝山': 3212, '闸北': 2752, '徐汇': 3144, '黄浦': 1988, '松江': 2486, '静安': 1156, '闵行': 3119, '嘉定': 2839, '普陀': 3115, '青浦': 1930, '奉贤': 2056, '金山': 40, '崇明': 7}
+        let x_data = []
+        let y_data = []
+        let pie_data = []
+        for (let i in data_dict) {
+            x_data.push(i)
+            y_data.push(data_dict[i])
+            pie_data.push({value:data_dict[i], name:i})
+        }
+
+        var myChart = echarts.init(document.getElementById('main'));
+        var option = {
+            title: {
+                text: '上海市二手房数据'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['数量']
+            },
+            xAxis: {
+                data: x_data
+            },
+            yAxis: {},
+            series: [{
+                name: '数量',
+                type: 'bar',
+                data: y_data,
+                itemStyle: {
+                    normal: {
+                        label: {
+                        show: true,
+                        position: 'top',
+                        textStyle: {
+                            color: '#333333',
+                            fontSize: 14
+                        }
+                        },
+                        barBorderRadius: [4, 4, 0, 0]
+                    }
+                }
+            },
+            {
+                type: 'pie',
+                radius: [0, '27%'],
+                center: ['86%', '20%'],
+                data: pie_data
+            }]
+        };
+
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

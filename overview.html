@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- import CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <!-- <link rel="stylesheet" href="./css/element_ui_index.css"> -->
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/overview.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/common/echarts.min.js"></script>
+  <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /*html,body{
+        width: 100%;
+        height: 97%;
+    }*/
+    #main{
+        width:100%;
+        height: 100%;
+        background: #f7f7f7;
+        position: absolute;
+    }
+  </style>
+</head>
+<body style="background-color: #f7f7f7;margin: 0;">
+  <!-- <div ref="loading" style="text-align: center;margin-top: 20.5%;">
+    <div id="loading"></div>
+    加载中……
+  </div> -->
+  <div id="main" ref="main" style=""></div>
+</body>
+  <!-- import Vue before Element -->
+  <script src="./js/vue.min.js"></script>
+  <!-- import JavaScript -->
+  <script src="./js/element_ui_index.js"></script>
+  <script src="./js/overview.js"></script>
+</html>
